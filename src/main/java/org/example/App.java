@@ -1,6 +1,5 @@
 package org.example;
 
-import org.example.ui.UserIOConsoleImpl;
 import org.example.controller.VendingMachineController;
 import org.example.dao.VendingMachineAuditDao;
 import org.example.dao.VendingMachineAuditDaoFileImpl;
@@ -9,6 +8,7 @@ import org.example.dao.VendingMachineDaoFileImpl;
 import org.example.service.VendingMachineServiceLayer;
 import org.example.service.VendingMachineServiceLayerImpl;
 import org.example.ui.UserIO;
+import org.example.ui.UserIOConsoleImpl;
 import org.example.ui.VendingMachineView;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

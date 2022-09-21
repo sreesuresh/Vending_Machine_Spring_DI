@@ -13,15 +13,19 @@ class VendingMachineDaoFileImplTest {
 
     public VendingMachineDaoFileImplTest() {
     }
+
     @BeforeAll
     public static void setUpClass() {
     }
+
     @AfterAll
     public static void tearDownClass() {
     }
+
     @BeforeEach
     public void setUp() {
     }
+
     @AfterEach
     public void tearDown() {
     }
@@ -38,7 +42,7 @@ class VendingMachineDaoFileImplTest {
 
         //ASSERT
         assertNotNull(retrievedItem, "Item should not be null");
-        assertEquals(retrievedItem, snickersClone,"The item retrieved should be snickers");
+        assertEquals(retrievedItem, snickersClone, "The item retrieved should be snickers");
     }
 
     @Test
@@ -70,20 +74,20 @@ class VendingMachineDaoFileImplTest {
         int retrievedInventory = testDao.getItemInventory(itemName);
 
         //ASSERT
-        assertEquals(retrievedInventory,0,"There are 0 items of snickers left.");
+        assertEquals(retrievedInventory, 0, "There are 0 items of snickers left.");
     }
 
     @Test
     public void testGetMapOfItemNamesInStockWithCosts() throws VendingMachinePersistenceException {
 
         //ACT
-        Map<String,BigDecimal> itemsInStock = testDao.getMapOfItemNamesInStockWithPrices();
+        Map<String, BigDecimal> itemsInStock = testDao.getMapOfItemNamesInStockWithPrices();
 
         //ASSERT
         //there are 0 snickers left, so it should not be included.
         assertFalse(itemsInStock.containsKey("Snickers"));
         //There are 7 items in total, only snickers  is out of stock, so there should be 6 items
-        assertEquals(itemsInStock.size(),6,"The menu list should contain 6 items.");
+        assertEquals(itemsInStock.size(), 6, "The menu list should contain 6 items.");
         assertTrue(itemsInStock.containsKey("Kitkat") &&
                 itemsInStock.containsKey("McCoys") &&
                 itemsInStock.containsKey("Haribo") &&

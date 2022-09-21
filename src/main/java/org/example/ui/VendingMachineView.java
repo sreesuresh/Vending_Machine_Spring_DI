@@ -8,7 +8,7 @@ public class VendingMachineView {
     private UserIO io;
 
     // for loading user io
-    public VendingMachineView (UserIO io) {
+    public VendingMachineView(UserIO io) {
         this.io = io;
     }
 
@@ -24,7 +24,7 @@ public class VendingMachineView {
 
     // for showing all items in stock with price
     public void displayMenu(Map<String, BigDecimal> itemsInStockWithPrices) {
-        itemsInStockWithPrices.entrySet().forEach(entry ->{
+        itemsInStockWithPrices.entrySet().forEach(entry -> {
             System.out.println(entry.getKey() + ": $" + entry.getValue());
         });
     }
@@ -56,7 +56,7 @@ public class VendingMachineView {
     }
 
     // for displaying error message with title
-    public void displayErrorMessage (String errorMsg) {
+    public void displayErrorMessage(String errorMsg) {
         io.print("=== Error ===");
         io.print(errorMsg);
     }

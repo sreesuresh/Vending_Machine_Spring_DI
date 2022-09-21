@@ -1,4 +1,5 @@
 package org.example.dao;
+
 import org.springframework.stereotype.Component;
 
 import java.io.FileWriter;
@@ -31,7 +32,7 @@ public class VendingMachineAuditDaoFileImpl implements VendingMachineAuditDao {
             throw new VendingMachinePersistenceException("Could not persist audit information", e);
         }
         LocalDateTime timestamp = LocalDateTime.now();
-        out.println(timestamp.toString() + " : " +entry);
+        out.println(timestamp.toString() + " : " + entry);
         out.flush();
     }
 

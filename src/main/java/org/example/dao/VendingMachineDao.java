@@ -19,7 +19,7 @@ public interface VendingMachineDao {
     //Returns item or null if there is no item associated with the given item name
     Item getItem(String name) throws VendingMachinePersistenceException;
 
-    Map<String,BigDecimal> getMapOfItemNamesInStockWithPrices() throws VendingMachinePersistenceException;
+    Map<String, BigDecimal> getMapOfItemNamesInStockWithPrices() throws VendingMachinePersistenceException;
 
     List<Item> getAllItems() throws VendingMachinePersistenceException;
 

@@ -7,7 +7,7 @@ public enum Coin {
     private final int value;
 
     // getters and setters
-    Coin (int value) {
+    Coin(int value) {
         this.value = value;
     }
 

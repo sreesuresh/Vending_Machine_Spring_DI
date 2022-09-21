@@ -1,7 +1,6 @@
 package org.example.service;
 
 
-
 import org.example.dao.VendingMachinePersistenceException;
 import org.example.dto.Item;
 
@@ -9,7 +8,7 @@ import java.math.BigDecimal;
 import java.util.Map;
 
 public interface VendingMachineServiceLayer {
-    void checkIfEnoughMoney(Item item, BigDecimal inputMoney) throws  InsufficientFundsException;
+    void checkIfEnoughMoney(Item item, BigDecimal inputMoney) throws InsufficientFundsException;
 
     Map<String, BigDecimal> getItemsInStockWithPrices() throws VendingMachinePersistenceException;
 
