@@ -8,7 +8,7 @@ Coca Cola::1.5::10
 Cadbury Heroes::3.10::11
 Black Pudding::2.30::5
 Snickers::2.10::0
-Kitkat::1.50::7
+Kitkat::1.50::6
 Haribo::1.60::9
 Malteasers::2.10::7
 Angel Slices::1.10::3
